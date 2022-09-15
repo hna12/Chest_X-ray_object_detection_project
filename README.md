@@ -4,7 +4,7 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
 
 ### Introduction
 * Why Chest X-ray?
-  * Chest X-ray는 검사에서 기본중에 기본.
+  * Chest X-ray는 기본중에 기본인 검사.
   * 생명과 직결되는 부위이기 때문에 정확한 진단이 필요하다.
   * 다른 부위의 X-ray와는 다르게 놓칠 가능성이 있는 부위라 많고 많은 X-ray data중 chest X-ray를 선택하였다.
   
