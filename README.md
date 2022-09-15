@@ -25,13 +25,16 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
   * 병명 사전조사: </br>
   https://www.notion.so/63d70daf163d4c82b4027d85a9bc9e86
 
+* Methods
+
 ### Results
 
 ### Discussion
 
-### Faster R-CNN
+### MEMO
+##### Faster R-CNN
 Faster R-CNN use the 'Pascal VOC dataset format'.
 In 'Pascal VOC format', the bbox is represented as [x_min, y_min, x_max, y_max']
 
-### YOLO
+##### YOLO
 In 'YOLO', the bbox is represented as [x_mid, y_mid, width, height]
