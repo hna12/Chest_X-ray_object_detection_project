@@ -22,8 +22,8 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
   * train images: 15,000 (normal: 10,606, patient: 4,394)
   * test images: 3,000
   * bbox info: image_id, class_id, x_min, y_min, x_max, y_max
-  * 병면 사전조사: </br>
-  https://www.notion.so/chest-X-ray-object-detection-b1dba5221e664b90bd0f8584a9fe0d0c#8869ab3437f04fe5b3a9eb58a12f0e10
+  * 병명 사전조사: </br>
+  https://www.notion.so/63d70daf163d4c82b4027d85a9bc9e86
 
 ### Results
 
