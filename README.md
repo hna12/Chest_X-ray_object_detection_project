@@ -28,12 +28,19 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
 * Methods
   * Tools: OpenCV, PyTorch, numpy, pandas, sklearn, seaborn, matplotlib
   * Augmentations: Rotation(90º), Flip(horizontal), Zoomin(10%), Cutmix, CLAHE, Equlization, Mosaic, Cutmix + Mosaic
-  * Models: EfficientDet, Faster R-CNN, YOLOX
+  * Models: EfficientDet(소정), Faster R-CNN(봉학,현나), YOLOX(수현)
   * Workflow
    ![화면 캡처 2022-09-30 140330](https://user-images.githubusercontent.com/61971952/193194200-5f44aa1e-2fd4-410a-be1b-1d16b6be21cc.png)
 
 ### Results
+* EDA
+![다운로드](https://user-images.githubusercontent.com/61971952/193208507-db90dc58-47ec-4ceb-9f6a-591c7c5d1644.png)
 
+* Augmentation에 따른 dataset 종류
+  * category A: no augmentation (4,394장)
+  * category B: rotation, flip, zoomin
+  * categroy C: rotation, flip, zoomin, cutmix, CLAHE, equalization, mosaic, cutmix+mosaic
+  * category D(for data imbalance issue)
 
 ### Discussion
 
