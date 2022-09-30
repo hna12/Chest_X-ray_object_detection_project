@@ -47,7 +47,7 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
   * <img src="https://user-images.githubusercontent.com/61971952/193212025-c29832b9-b649-41f9-8e58-7ad8a5b25c56.png" width="400" height="200"/>
   
   
-* Model에 따른 성능 비교
+* Model에 따른 성능 비교(kaggle score)
 </br>
 
 Model | Category A | Category B | Category C | Category D
