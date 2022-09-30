@@ -34,13 +34,19 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
 
 ### Results
 * EDA
-![다운로드](https://user-images.githubusercontent.com/61971952/193208507-db90dc58-47ec-4ceb-9f6a-591c7c5d1644.png)
+  * 정상인의 데이터를 삭제하고 적은 양의 환자 데이터만 남음
+  * 라벨 간의 극단적인 양 차이 -> 데이터 불균형
+  * 단일 이미지안에 다중 라벨
+  * <img src="https://user-images.githubusercontent.com/61971952/193209874-ebc78a59-5b58-4816-8412-c841a3b6099f.png" width="600" height="400"/>
 
 * Augmentation에 따른 dataset 종류
   * category A: no augmentation (4,394장)
   * category B: rotation, flip, zoomin
   * categroy C: rotation, flip, zoomin, cutmix, CLAHE, equalization, mosaic, cutmix+mosaic
-  * category D(for data imbalance issue)
+  * category D: 데이터 불균형 해소를 위해 가장 적은 양의 라벨을 갖는 사진만 augmentation을 적용하고 나머지 라벨은 down sampling
+  * <img src="https://user-images.githubusercontent.com/61971952/193212025-c29832b9-b649-41f9-8e58-7ad8a5b25c56.png" width="400" height="200"/>
+
+
 
 ### Discussion
 
