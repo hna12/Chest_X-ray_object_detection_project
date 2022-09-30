@@ -45,7 +45,18 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
   * categroy C: rotation, flip, zoomin, cutmix, CLAHE, equalization, mosaic, cutmix+mosaic
   * category D: 데이터 불균형 해소를 위해 가장 적은 양의 라벨을 갖는 사진만 augmentation을 적용하고 나머지 라벨은 down sampling
   * <img src="https://user-images.githubusercontent.com/61971952/193212025-c29832b9-b649-41f9-8e58-7ad8a5b25c56.png" width="400" height="200"/>
+  
+  
+* Model에 따른 성능 비교
+</br>
 
+Model | Category A | Category B | Category C | Category D
+-------|-------|-------|-------|-------|
+EfficientDet | 0.038 | 0.046 | 0.052 | --
+Faster R-CNN | 0.012 | 0.098 | 0.013 | --
+YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
+   
+</br>
 
 
 ### Discussion
