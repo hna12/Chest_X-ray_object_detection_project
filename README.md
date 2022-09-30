@@ -41,9 +41,9 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
 
 * Augmentation에 따른 dataset 종류
   * category A: no augmentation (4,394장)
-  * category B: rotation, flip, zoomin
-  * categroy C: rotation, flip, zoomin, cutmix, CLAHE, equalization, mosaic, cutmix+mosaic
-  * category D: 데이터 불균형 해소를 위해 가장 적은 양의 라벨을 갖는 사진만 augmentation을 적용하고 나머지 라벨은 down sampling
+  * category B: rotation, flip, zoomin (17,576장)
+  * categroy C: rotation, flip, zoomin, cutmix, CLAHE, equalization, mosaic, cutmix+mosaic (30,758장)
+  * category D: 데이터 불균형 해소를 위해 가장 적은 양의 라벨을 갖는 사진만 augmentation을 적용하고 나머지 라벨은 down sampling (5,999장)
   * <img src="https://user-images.githubusercontent.com/61971952/193212025-c29832b9-b649-41f9-8e58-7ad8a5b25c56.png" width="400" height="200"/>
   
   
