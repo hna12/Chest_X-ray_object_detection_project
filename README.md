@@ -63,8 +63,10 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 * Bio의 trend인 object detection 을 공부하기 위하여 선택한 프로젝트
 * Model selection
   * 1 stage model
+    * YOLOX: 1 stage에서 유명하고 속도가 빠름
+    * EfficientDet (one-stage detector paradigm 기반으로 구성됨): 사람들이 주로 사용하는 YOLO v5보다 average precision이 좋음 
   * 2 stage model
-  * EfficientDet
+    * Faster R-CNN: 이전 수업에서 사용했던 model이 1 stage라서 2 stage 공부 겸 여전히 현역으로 쓰이고 있는 기초적인 모델
 ### MEMO
 ##### Faster R-CNN
 Faster R-CNN use the 'Pascal VOC dataset format'.
