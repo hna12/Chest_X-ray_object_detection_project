@@ -60,7 +60,11 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 
 
 ### Discussion
-
+* Bio의 trend인 object detection 을 공부하기 위하여 선택한 프로젝트
+* Model selection
+  * 1 stage model
+  * 2 stage model
+  * EfficientDet
 ### MEMO
 ##### Faster R-CNN
 Faster R-CNN use the 'Pascal VOC dataset format'.
