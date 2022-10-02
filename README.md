@@ -61,6 +61,11 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 
 ### Discussion
 * Bio의 trend인 object detection 을 공부하기 위하여 선택한 프로젝트
+* 학습 data안에서 train & valid로 나누지 않고 group k-fold를 사용했던 이유? </br>
+  * 적은 data set에 대하여 정확도를 향상시킬 수 있다.
+  * ∵ training/validation/test 세개의 집단으로 분류하는 것보다 training & test로만 분류시 학습할 data가 더 많게되어 underfitting등 성능이 미달되는 model이 학습되지 않도록 함.
+  * 또한 1개의 이미지에 다중 label이므로 예측의 정확도를 확실히 평가하기위해 train set & valid에 포함된 image가 겹치지 않도록 하기위하여 k-fold중에서도 group k-fold를 사용하였다.
+  
 * Model selection
   * 1 stage model
     * YOLOX: 1 stage에서 유명하고 속도가 빠름
@@ -75,9 +80,12 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 * 또한 data내에서 모든 label이 비슷한 양으로 존재하지않고 특정 label위주로 존재하고있다. 즉, data imbalance가 심한상황. </br>
 Data imbalance 문제를 해결하기 위해 너무 많은 양을 갖고있는 특정 label은 down sampling하고 적은 양의 label에 여러가지 augmentation으로 up sampling하는 작업을 하였다. </br>
 가장 적은 양을 갖는 label은 1,12번이었고 가장 많이 존재하는 label은 0,3,11,13이다. </br>
-1,12에는 Rotation, Flip, Zoomin, Cutmix, CLAHE, Equalization 하고</br>
+1,12에는 Rotation, Flip, Zoomin, Cutmix, CLAHE, Equalization 하고 </br>
 0,3,11,13은 약 3,000개로 down sampling하여 label당 데이터 개수를 비슷하게 만들어서 성능을 확인해보았다. → D그룹 </br>
-가장 성능이 좋았던 YOLOX로 D그룹을 학습한 결과 A그룹에 비해 성능이 향상됨을 확인할 수 있었고 기본 augmentation
+가장 성능이 좋았던 YOLOX로 D그룹을 학습한 결과 A그룹에 비해 성능이 향상됨을 확인할 수 있었고 양이 적은데도 불구하고 기본 3가지 augmentation을 한 B그룹보다 성능이 좋았다. </br>
+하지만 기본 augmentation외에 추가적인 augmentation을 했던 C그룹보다는 성능이 덜 나왔다. </br>
+C그룹에서 훨씬 성능이 좋았던것을 통해 data imbalance를 해결한것보다는 data의 양이 충분히 있는것이 성능향상에 더 많은 효과가 있음을 유추할 수 있었고 imbalance와 data의 양을 동시에 해결한다면 이보다 훨씬 더 좋은 성능을 낼 수 있지 않을까 싶다. 
+
 ### MEMO
 ##### Faster R-CNN
 Faster R-CNN use the 'Pascal VOC dataset format'.
