@@ -66,6 +66,10 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
   * ∵ training/validation/test 세개의 집단으로 분류하는 것보다 training & test로만 분류시 학습할 data가 더 많게되어 underfitting등 성능이 미달되는 model이 학습되지 않도록 함.
   * 또한 1개의 이미지에 다중 label이므로 예측의 정확도를 확실히 평가하기위해 train set & valid에 포함된 image가 겹치지 않도록 하기위하여 k-fold중에서도 group k-fold를 사용하였다.
   * 10epoch으로 학습시 k=1로만 본것과 k=5로 하여 성능을 비교한 결과 public score가 0.014에서 0.024로 향상됨을 확인할 수 있었다. 
+* Zoom in augmentation시 10%로 한 이유? </br>
+10%보다 더 zoom in을 했을경우 이미지의 가장자리에 위치하던 병변들이 잘리는 경우들이 있어서 이를 막기위해 10%정도만 zoom in을 하였다.
+* 병변이 너무도 작아 bbox의 y_max와 y_min이 별 차이가 나지 않는것들이 있었다. </br>
+normalization 후 다시 size(512x512) 재정의시 정수화함에따라 같은 값을 갖게되는 경우가 있었다. 이런 데이터로인해 학습시 오류가 발생하여 해당 데이터(10개 미만)는 삭제하기로 함.
 * Model selection
   * 1 stage model
     * YOLOX: 1 stage에서 유명하고 속도가 빠르기때문에 사용함.
