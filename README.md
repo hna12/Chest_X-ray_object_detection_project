@@ -93,6 +93,6 @@ C그룹에서 훨씬 성능이 좋았던것을 통해 data imbalance를 해결�
 ##### Faster R-CNN
 Faster R-CNN use the 'Pascal VOC dataset format'.
 In 'Pascal VOC format', the bbox is represented as [x_min, y_min, x_max, y_max']
-* ✔️Faster r-cnn은 다시 해보기
+
 ##### YOLO
 In 'YOLO', the bbox is represented as [x_mid, y_mid, width, height]
