@@ -89,6 +89,12 @@ Data imbalance 문제를 해결하기 위해 너무 많은 양을 갖고있는 �
 C그룹에서 훨씬 성능이 좋았던것을 통해 data imbalance를 해결한것보다는 data의 양이 충분히 있는것이 성능향상에 더 많은 효과가 있음을 유추할 수 있었고 </br>
 **imbalance와 data의 양을 동시에 해결한다면 이보다 훨씬 더 좋은 성능을 낼 수 있지 않을까 싶다.**
 
+### REF
+- https://www.kaggle.com/code/dschettler8845/visual-in-depth-eda-vinbigdata-competition-data
+- https://www.kaggle.com/code/yerramvarun/pytorch-fasterrcnn-with-group-kfold-14-class
+- https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-inference/notebook
+- https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-train/notebook
+
 ### MEMO
 ##### Faster R-CNN
 Faster R-CNN use the 'Pascal VOC dataset format'.
