@@ -2,7 +2,7 @@
 Kaggle - VinBigData chest X-ray abnormalities detection contest </br>
 url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection/overview </br>
 
-### Introduction
+### 🫁Introduction
 * Why Chest X-ray?
   * Chest X-ray는 기본중에 기본인 검사.
   * 생명과 직결되는 부위이기 때문에 정확한 진단이 필요하다.
@@ -15,7 +15,7 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
 * purpose </br>
 폐와 관련된 14가지의 질병을 detecting하여 data augmentation에 따른 여러 model의 performance 비교
 
-### Materials & Methods
+### 🫁Materials & Methods
 * Materials
   * Vietnam hospitals dataset </br>
   (the Hospital 108 and the Hanoi Medical University Hospital)
@@ -32,7 +32,7 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
   * Workflow
    ![화면 캡처 2022-09-30 140330](https://user-images.githubusercontent.com/61971952/193194200-5f44aa1e-2fd4-410a-be1b-1d16b6be21cc.png)
 
-### Results
+### 🫁Results
 * EDA
   * 정상인의 데이터를 삭제하고 적은 양의 환자 데이터만 남음
   * 라벨 간의 극단적인 양 차이 -> 데이터 불균형
@@ -59,7 +59,7 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 </br>
 
 
-### Discussion
+### 🫁Discussion
 * Bio의 trend인 object detection 을 공부하기 위하여 선택한 프로젝트
 * 학습 data안에서 train & valid로 나누지 않고 group k-fold를 사용했던 이유?
   * 적은 data set에 대하여 정확도를 향상시킬 수 있다.
