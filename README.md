@@ -45,18 +45,18 @@ url: https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-det
   * categroy C: rotation, flip, zoomin, cutmix, CLAHE, equalization, mosaic (30,758장)
   * category D: 데이터 불균형 해소를 위해 가장 적은 양의 라벨을 갖는 사진만 augmentation을 적용하고 나머지 라벨은 down sampling (5,999장)
   * <img src="https://user-images.githubusercontent.com/61971952/193212025-c29832b9-b649-41f9-8e58-7ad8a5b25c56.png" width="400" height="200"/>
-</br>
+  </br>
 
-Category A | Category B | Category C | Category D
-------|-------|-------|-------|
- 원본 | ROTATION | ROTATION | ROTATION 
- &nbsp; | FLIP | FLIP | FLIP 
- &nbsp; | ZOOM IN | ZOOM IN | ZOOM IN 
- &nbsp; |  | CUTMIX | CUTMIX
- &nbsp; |  | CLAHE | CLAHE
- &nbsp; |  | EQUALIZATION | EQUALIZATION
- &nbsp; |  | MOSAIC | MOSAIC
-</br>
+  Category A | Category B | Category C | Category D
+  ------|-------|-------|-------|
+   원본 | ROTATION | ROTATION | ROTATION 
+   &nbsp; | FLIP | FLIP | FLIP 
+   &nbsp; | ZOOM IN | ZOOM IN | ZOOM IN 
+   &nbsp; |  | CUTMIX | CUTMIX
+   &nbsp; |  | CLAHE | CLAHE
+   &nbsp; |  | EQUALIZATION | EQUALIZATION
+   &nbsp; |  | MOSAIC | MOSAIC
+  </br>
   
 * Model에 따른 성능 비교(kaggle score)
 </br>
