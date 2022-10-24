@@ -68,7 +68,8 @@ Faster R-CNN | 0.012 | 0.098 | 0.013 | --
 YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
    
 </br>
-
+* 예측 이미지
+<img src = "https://user-images.githubusercontent.com/61971952/197476506-f159bd0a-d6ac-41b6-8a06-229f5eb3b9ea.png" width = 40% height = 40%>
 
 ### 🫁Discussion
 * Bio의 trend인 object detection 을 공부하기 위하여 선택한 프로젝트
