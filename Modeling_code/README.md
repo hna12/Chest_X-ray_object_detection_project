@@ -14,3 +14,8 @@
 * 즉, 제대로 group k-fold를 썼다고 보면 됨.
 * epoch * 5
 * 시간 상 10e, 20e만 진행
+
+### JSONtoFRAMEWORK.ipynb
+* B,C,D dataset의 경우 COCO형식으로 저장했기때문에 Faster R-CNN의 VOC pascal형식에 맞춰서 모델에 넣어줘야함.
+* 이를 위해 json을 pandas framework로 만들어줌.
+* JSONtoFRAMEWORK_by봉학.ipynb의 경우 알고리즘적으로 잘 짜여졌기 때문에 dataframe으로 만드는데 시간이 덜 걸린다. (thx to bonghag)
