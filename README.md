@@ -79,7 +79,7 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
   * ∵ training/validation/test 세개의 집단으로 분류하는 것보다 training & test로만 분류시 학습할 data가 더 많게되어 underfitting등 성능이 미달되는 model로 학습되지 않도록 함.
   * 또한 1개의 이미지에 다중 label이므로 예측의 정확도를 확실히 평가하기위해 train set & valid에 포함된 image가 겹치지 않도록 하기위하여 k-fold중에서도 group k-fold를 사용하였다.
   * 하지만 학습 시간이 꽤 오래걸려 시간상 k = 1 로 세팅해 놓았음. </br>
-(즉, kfold를 하지 않고 train:valid = 8:2로 데이터셋을 나눠 학습한 것과 같음.)
+(즉, kfold를 하지 않고 train:valid = 8:2로 데이터셋을 별도로 나눠 학습한 것과 같음.)
   * 10epoch으로 학습시 k=1로만 본것과 k=5로 하여 성능을 비교한 결과 public score가 0.014에서 0.025로 향상됨을 확인할 수 있었다. 
   * 그러므로 데이터를 augmenation한 B와 C도 제대로 k = 5로 세팅해서 학습했다면 더 좋은 성능을 보였을 듯 하다.
 
