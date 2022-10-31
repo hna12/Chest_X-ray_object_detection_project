@@ -74,7 +74,7 @@ YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 
 ### 🫁Discussion
 * Bio의 trend인 object detection 을 공부하기 위하여 선택한 프로젝트
-* 학습 data안에서 train & valid로 나누지 않고 group k-fold를 사용했던 이유?
+* 학습 data안에서 train & valid로 나누지 않고 Group K-Fold를 사용했던 이유?
   * 적은 data set에 대하여 정확도를 향상시킬 수 있다.
   * ∵ training/validation/test 세개의 집단으로 분류하는 것보다 training & test로만 분류시 학습할 data가 더 많게되어 underfitting등 성능이 미달되는 model로 학습되지 않도록 함.
   * 또한 1개의 이미지에 다중 label이므로 예측의 정확도를 확실히 평가하기위해 train set & valid에 포함된 image가 겹치지 않도록 하기위하여 k-fold중에서도 group k-fold를 사용하였다.
